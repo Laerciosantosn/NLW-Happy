@@ -1,11 +1,14 @@
 import express from "express";
 
-const app = express();
+import './database/connection';
 
 import routes from './routes';
-app.get('/', (request, response) => {
-  return response.json({message: "Rodando"})
-})
+
+const app = express();
+
+app.use(express.json());
+app.use(routes);
+
 
 app.listen(3333, () => {
   console.log('Server is runing in: http://localhost:3333')
