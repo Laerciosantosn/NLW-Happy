@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+
 import GlobalStyle from './assets/styles/GlobalStyle';
+import 'leaflet/dist/leaflet.css';
 
 ReactDOM.render(
   <React.StrictMode>

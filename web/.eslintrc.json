@@ -29,6 +29,7 @@
       "@typescript-eslint"
   ],
   "rules": {
+    "jsx-a11y/label-has-associated-control": "off",
     "prettier/prettier": "error",
     "no-use-before-define": "off",
     "react-hooks/rules-of-hooks": "error",
